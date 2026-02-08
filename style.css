@@ -1,0 +1,106 @@
+:root {
+    --brand-color: #4fb9bd; 
+    --dark-text: #2c3e50;
+    --light-gray: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--brand-color); /* Mantido conforme seu pedido */
+    color: var(--dark-text);
+    margin: 0;
+}
+
+header {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--brand-color);
+}
+
+.logo-container img {
+    max-width: 180px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 5px 0;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Ajuste do Registro e Nome Profissional */
+.professional { 
+    margin: 5px 0 0; 
+    font-weight: bold; 
+    color: #555; 
+}
+
+.registry { 
+    margin: 0; 
+    font-size: 0.85rem; 
+    color: var(--brand-color); 
+    font-weight: bold; 
+}
+
+.container {
+    padding: 20px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: var(--brand-color);
+}
+
+.input-group { margin-bottom: 15px; }
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background: var(--brand-color);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #666;
+    background-color: var(--light-gray);
+}

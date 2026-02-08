@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lótus Optometria | Agendamento Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Lótus Optometria">
+            <h1>Lótus Optometria</h1>
+            <p class="professional">Fabiano Ricardo da Silva</p>
+            <p class="registry">Optometrista | CROO-SP: 58.298</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Solicitar Atendimento</h2>
+            
+            <form id="agendamentoForm">
+                <div class="input-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" placeholder="Seu nome" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="servico">O que você precisa?</label>
+                    <select id="servico">
+                        <option value="Exame de Vista">Exame de Vista</option>
+                        <option value="Consulta de Rotina">Consulta de Rotina</option>
+                        <option value="Saber o Valor da Consulta">Saber o Valor da Consulta</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="periodo">Melhor Período</label>
+                    <select id="periodo">
+                        <option value="Manhã">Manhã</option>
+                        <option value="Tarde">Tarde</option>
+                    </select>
+                </div>
+
+                <button type="submit">Enviar para o WhatsApp</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Sala Shopping - 3º Andar</strong></p>
+        <p>Rua Sete de Setembro, 369 - Sala 314-B</p>
+        <p>Centro - São José dos Campos - SP</p>
+        <p><strong>(12) 98705-4594</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
