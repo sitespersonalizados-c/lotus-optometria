@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lótus Optometria | Agendamento Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.webp" width="180" height="180" fetchpriority="high" alt="Lótus Optometria">
+            <h1>Lótus Optometria</h1>
+            <p class="professional">Fabiano Ricardo da Silva</p>
+            <p class="registry">Optometrista | CROO-SP: 58.298</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Solicitar Atendimento</h2>
+
+            <form id="agendamentoForm">
+                <div class="input-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Ex: Maria" required>
+                </div>
+                <div class="input-group">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" placeholder="Ex: Silva" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="servico">O que você precisa?</label>
+                    <select id="servico">
+                        <option value="Exame de Vista">Exame de Vista</option>
+                        <option value="Consulta de Rotina">Consulta de Rotina</option>
+                        <option value="Saber o Valor da Consulta">Saber o Valor da Consulta</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="periodo">Melhor Período</label>
+                    <select id="periodo">
+                        <option value="Manhã">Manhã</option>
+                        <option value="Tarde">Tarde</option>
+                    </select>
+                </div>
+
+                <div id="aviso-valor"
+                    style="display: none; color: #004a55; font-weight: bold; margin: 15px 0; background: #e0f7f9; padding: 12px; border-radius: 10px; text-align: center; border: 1px solid #b2ebf2;">
+                    O valor da consulta é a partir de R$ 60,00.
+                </div>
+
+                <button type="submit">Enviar para o WhatsApp</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2 style="margin-bottom: 5px;">Sobre a Lótus Optometria</h2>
+
+            <div class="sobre-texto">
+                <p>
+                    Com mais de 30 anos de experiência na área óptica, Fabiano Ricardo da Silva
+                    é um especialista na avaliação quantitativa e não invasiva da acuidade visual.
+                </p>
+
+                <details>
+                    <summary style="cursor: pointer; color: var(--brand-color); font-weight: bold; list-style: none;">
+                        Ler biografia completa...
+                    </summary>
+                    <p style="margin-top: 15px;">
+                        Formado em Optometria pela faculdade Brás Cubas em 2016, oferece orientação
+                        precisa para lentes corretivas e lentes de contato, além de encaminhamentos
+                        oftalmológicos quando necessário.
+                    </p>
+                    <p>
+                        Sua dedicação à saúde ocular e compromisso com a evolução contínua o tornam
+                        um aliado confiável na busca por uma visão clara e saudável.
+                    </p>
+                </details>
+
+                <p style="margin-top: 15px;">
+                    <strong>Não perca a oportunidade de conhecer de perto o trabalho excepcional
+                        desse profissional. Agende sua consulta e descubra como transformar sua visão.</strong>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Lótus Optometria</strong></p>
+            <p>Rua Sete de Setembro, 369 - Sala 314-B</p>
+            <p>Centro - São José dos Campos - SP</p>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.63171914116!2d-45.885477099999996!3d-23.1836378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4be40f536dc9%3A0x2ad3ea766a86260f!2sL%C3%B3tus%20Optometria%20%7C%20Exame%20De%20Vista%20%7C%20SJC!5e0!3m2!1spt-BR!2sbr!4v1771688005255!5m2!1spt-BR!2sbr"
+                    width="450" height="250" title="Mapa de localização da Lótus Optometria em São José dos Campos"
+                    style="border:0;" allowfullscreen="">
+                </iframe>
+            </div>
+
+            <p class="copyright">
+                © 2026 Lótus Optometria - Desenvolvido por Cristina Silva
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

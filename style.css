@@ -1,0 +1,170 @@
+:root {
+    --brand-color: #2e8b8f;
+    --dark-text: #1a252f;
+    --light-gray: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--brand-color);
+    /* Mantido conforme seu pedido */
+    color: var(--dark-text);
+    margin: 0;
+}
+
+header {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--brand-color);
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 5px 0;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Ajuste do Registro e Nome Profissional */
+.professional {
+    margin: 5px 0 0;
+    font-weight: bold;
+    color: #555;
+}
+
+.registry {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #246d70;
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.sobre-texto {
+    font-size: 0.85rem;
+    /* Fonte um pouco menor deixa o texto mais leve */
+    color: #444;
+    text-align: left;
+    line-height: 1.5;
+    /* Espaçamento um pouco mais justo */
+    background: #fcfcfc;
+    padding: 12px;
+}
+
+.sobre-texto p {
+    margin-bottom: 5px;
+}
+
+details summary {
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+details summary:hover {
+    background: #edf2f2;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: var(--dark-text);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background: #246d70;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #666;
+    background-color: var(--light-gray);
+}
+
+.map-container {
+    margin: 30px auto;
+    /* Centraliza */
+    max-width: 90%;
+    /* Não deixa passar da tela */
+    width: 450px;
+    /* Tamanho ideal para desktop */
+    height: 250px;
+    /* Altura elegante */
+    border-radius: 20px;
+    /* Bordas bem arredondadas e modernas */
+    overflow: hidden;
+    /* Garante que o mapa siga o arredondado */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    /* Sombra suave */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+
+    .sobre-texto {
+        text-align: justify;
+    }
+
+}
